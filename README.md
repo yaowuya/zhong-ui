@@ -1,24 +1,21 @@
-# zhong-ui
+# zhong-ui 组件库
 
-## Project setup
+### 快速开始
+> 1.安装组件库
+```javascript
+npm i zhong-ui
 ```
-npm install
-```
+> 2.在 main.js 中引入组件库
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+```javascript
+// 全部引入
+import 'zhong-ui/dist/css/index.css'
+import MUI from "zhong-ui";
+Vue.use(MUI);
 
-### Compiles and minifies for production
-```
-npm run build
-```
+// 按需引入
+import 'zhong-ui/dist/css/demo.css'
+import { Demo } from "zhong-ui";
+Vue.use(Demo);
 
-### Lints and fixes files
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
